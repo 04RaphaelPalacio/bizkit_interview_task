@@ -26,5 +26,6 @@ def search_users(args):
     """
 
     # Implement search here!
+    
 
     return USERS
