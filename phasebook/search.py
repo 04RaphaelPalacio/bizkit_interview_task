@@ -27,5 +27,12 @@ def search_users(args):
 
     # Implement search here!
     
+    users_dict =  { 0: {"age": "29", "id": "1", "name": "John Doe", "occupation": "Developer"}, 1: {"age": "30", "id": "2", "name": "John Doe", "occupation": "Engineer"}, 2: {"age": "25", "id": "3", "name": "John Doe", "occupation": "Designer"}, 3: {"age": "28", "id": "4", "name": "John Smith", "occupation": "Architect"}, 4: {"age": "31", "id": "5", "name": "Jane Smith", "occupation": "Manager"}, 5: {"age": "24", "id": "6", "name": "Joe Smith", "occupation": "Designer"}} 
 
-    return USERS
+    for i in range(users_dict):
+        user_input_key = input("Search User:")
+        users_dict[user_input_key] = user_input_key
+        if  user_input_key not in users_dict:
+            return False
+        else: return USERS
+search_users()
